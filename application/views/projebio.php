@@ -205,9 +205,6 @@ h2{
 		display: block;
 	}
 
-
-
-
 .informacoes-sobre-a-empresa{
 	width: 500px;
 }
