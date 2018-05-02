@@ -4,15 +4,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>teste</title>
+		<title>Projebio</title>
 		<link rel="shortcut icon" href="favicon.ico" />
+
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>content/estilos/estilo.css" /> 
 	</head>
 	<body>
 		<header class="cabecalho">
 			<div class="conteudo">
 				<div class="blocos">
 					<a href="" class="logo">
-						<img src="content/Imagens/logo.png" alt="Imagem da empresa">
+						<img src="<?php echo base_url();?>content/Imagens/logo.png" alt="Imagem da empresa">
 					</a> 
 			<!-- 		<a href="" class="logo">
 						<img src="http://via.placeholder.com/185x63" alt="Imagem da empresa">
