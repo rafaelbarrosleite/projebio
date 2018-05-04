@@ -1,0 +1,41 @@
+.formulario-de-contato{
+	width: 100%;
+	text-align: left;
+}
+.formulario-de-contato_item{
+	margin: 12px 21px;
+}
+
+label{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	display: block;
+}
+
+input{
+	height: 44px;
+	box-sizing: border-box;
+}
+
+button{
+	background-color: green;
+	padding: 8px;
+	height: 44px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 200px;
+	color: white;
+	border: none;
+	cursor: pointer;
+
+}
+
+
+input, textarea{
+	border: 1px solid #cecece;
+	border-radius: 3px;
+	padding: 12px;
+	width: 100%;
+
+}

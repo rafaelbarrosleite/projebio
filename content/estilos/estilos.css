@@ -1,0 +1,274 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none; }
+
+img,
+audio,
+video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0;
+  text-align: left; }
+
+.conteudo {
+  width: 1020px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block; }
+
+.grade {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.grade__coluna_1 {
+  flex: none;
+  width: 8.33333%; }
+
+.grade__coluna_2 {
+  flex: none;
+  width: 16.66667%; }
+
+.grade__coluna_3 {
+  flex: none;
+  width: 25%; }
+
+.grade__coluna_4 {
+  flex: none;
+  width: 33.33333%; }
+
+.grade__coluna_5 {
+  flex: none;
+  width: 41.66667%; }
+
+.grade__coluna_6 {
+  flex: none;
+  width: 50%; }
+
+.grade__coluna_7 {
+  flex: none;
+  width: 58.33333%; }
+
+.grade__coluna_8 {
+  flex: none;
+  width: 66.66667%; }
+
+.grade__coluna_9 {
+  flex: none;
+  width: 75%; }
+
+.grade__coluna_10 {
+  flex: none;
+  width: 83.33333%; }
+
+.grade__coluna_11 {
+  flex: none;
+  width: 91.66667%; }
+
+.grade__coluna_12 {
+  flex: none;
+  width: 100%; }
+
+.formulario-de-contato {
+  width: 100%;
+  text-align: left; }
+
+.formulario-de-contato_item {
+  margin: 12px 21px; }
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block; }
+
+input {
+  height: 44px;
+  box-sizing: border-box; }
+
+button {
+  background-color: green;
+  padding: 8px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 200px;
+  color: white;
+  border: none;
+  cursor: pointer; }
+
+input, textarea {
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  padding: 12px;
+  width: 100%; }
+
+.cabecalho {
+  display: flex;
+  height: 70px;
+  padding: 12px;
+  align-items: center; }
+  .cabecalho .logo {
+    width: 200px; }
+  .cabecalho .contato-cabecalho {
+    text-align: right; }
+    .cabecalho .contato-cabecalho .icone {
+      margin-right: 10px; }
+    .cabecalho .contato-cabecalho .texto {
+      font-size: 16px;
+      font-style: italic;
+      text-align: left; }
+      .cabecalho .contato-cabecalho .texto .numero-do-telefone {
+        font-size: 20px;
+        color: #2c6242;
+        display: block;
+        font-weight: bold; }
+
+.menu {
+  text-align: center;
+  color: #424242;
+  font-size: 16px;
+  white-space: nowrap;
+  flex-grow: 0;
+  flex-shrink: 0; }
+  .menu .menu_link {
+    margin: 0 7px;
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000000; }
+  .menu .menu_link:hover:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    background: #bdbdbd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #00623e; }
+
+body {
+  font-family: 'Roboto'; }
+
+.produtos {
+  text-align: center; }
+  .produtos .lista-de-produtos .lista-de-produtos_item {
+    text-align: center; }
+    .produtos .lista-de-produtos .lista-de-produtos_item h3 {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 5px 0; }
+
+.sobre-a-empresa {
+  height: 357px;
+  margin-top: 60px;
+  padding: 70px 0 0 0;
+  background-size: 100% !important;
+  margin-bottom: 45px;
+  background-attachment: fixed !important;
+  background-position: center !important; }
+  .sobre-a-empresa .imagem-da-empresa {
+    width: 40%;
+    margin-right: 5%;
+    border-radius: 10px;
+    min-width: 293px; }
+  .sobre-a-empresa .informacoes-sobre-a-empresa {
+    width: 55%;
+    color: #fff; }
+
+.fotos-da-empresa .fotos-da-empresa_item {
+  margin: 20px; }
+  .fotos-da-empresa .fotos-da-empresa_item .imagem-da-empresa {
+    width: 100%; }
+
+@media screen and (max-width: 666px) {
+  .sobre-a-empresa {
+    height: 470px;
+    padding: 38px 0 0 0; }
+    .sobre-a-empresa .blocos {
+      display: block !important; }
+    .sobre-a-empresa .imagem-da-empresa {
+      width: 100%;
+      margin-right: 5%;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+      max-width: 400px; }
+    .sobre-a-empresa .informacoes-sobre-a-empresa {
+      width: 91%;
+      color: #fff;
+      display: block;
+      margin: 0 auto;
+      text-align: center; } }
+.entre-em-contato {
+  background-color: #fbfbfb;
+  padding: 12px 0;
+  text-align: center; }
+  .entre-em-contato .localizacao .localizacao_item {
+    margin: 18px 0; }
+    .entre-em-contato .localizacao .localizacao_item .mapa {
+      max-height: 282px;
+      margin-bottom: 10px; }
+
+/*# sourceMappingURL=estilos.css.map */

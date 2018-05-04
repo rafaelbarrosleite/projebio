@@ -1,0 +1,88 @@
+.sobre-a-empresa{
+    height: 357px;
+    margin-top: 60px;
+    padding: 70px 0 0 0;
+    background-size: 100% !important;
+    margin-bottom: 45px;
+    background-attachment: fixed !important;
+    background-position: center !important;
+
+    .imagem-da-empresa{
+        width: 40%;
+        margin-right: 5%;
+        border-radius: 10px;
+        min-width: 293px;
+    }
+
+    .informacoes-sobre-a-empresa{
+        width: 55%;
+        color: #fff;
+    }
+}
+
+.fotos-da-empresa{
+    
+    .fotos-da-empresa_item{
+        margin: 20px;
+
+        .imagem-da-empresa{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 666px){
+
+    .sobre-a-empresa{
+        height: 470px;
+        padding: 38px 0 0 0;
+        
+        .blocos{
+            display: block !important;
+        }
+        .imagem-da-empresa{
+            width: 100%;
+            margin-right: 5%;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+
+        .informacoes-sobre-a-empresa{
+            width: 91%;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+    }
+}
+
+
+
+.entre-em-contato{
+    background-color: #fbfbfb;
+    padding: 12px 0;
+    text-align: center;
+
+    .localizacao{
+        .localizacao_item{
+            margin:18px 0;
+
+            .mapa{
+                max-height: 282px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    
+
+
+}
