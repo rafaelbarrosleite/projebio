@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<section> 
 			<div class="banner">
-				<img src="<?php echo base_url();?>content/img/imagem-banner" alt="">
+				<img src="<?php echo base_url();?>content/img/imagem-banner.jpg" alt="">
 			</div>
 		</section>
 		<main class="conteudo">
