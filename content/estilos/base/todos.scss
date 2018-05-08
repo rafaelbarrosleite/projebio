@@ -6,3 +6,35 @@
 		margin: 0 auto;
 		display: block;
 	}
+
+
+h2{
+	font-size: 24px;
+}
+
+
+h3{
+	font-size: 20px;
+}
+
+.titulo{
+	margin: 30px 0 5px;
+}
+
+.descricao-do-bloco{
+	margin-bottom: 30px;
+	line-height: 22px;
+}
+
+
+
+.blocos{
+	display: flex;
+	align-items: center;
+}
+
+
+p{
+	    line-height: 24px;
+    font-size: 16px;
+}

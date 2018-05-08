@@ -4,12 +4,36 @@
 	.lista-de-produtos {
 		
 		.lista-de-produtos_item{
-			text-align: center;
+			text-align: left;
+
+
+			&:first-child{
+				margin-right: 10%;
+			}
+
+			img{
+				border-radius: 6px;
+			}
 
 			h3{
 				font-weight: bold;
-				font-size: 20px;
-	    		margin: 5px 0;
+				font-size: 22px;
+    			margin: 10px 0;
+			}
+
+			.cotacao-do-dia{
+				strong{
+					color:  #00623e;
+				}
+			}
+
+			button{
+			    border: 1px solid #00633f;
+			    padding: 5px 8px;
+			    border-radius: 3px;
+			    margin-top: 7px;
+			    color: #00633f;
+			    font-size: 14px;
 			}
 		}
 	}

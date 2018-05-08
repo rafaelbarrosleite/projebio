@@ -1,0 +1,62 @@
+.modal{
+	background-color: rgba(0, 0, 0, 0.43);
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+	
+	.modal-dialog{
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+
+		.modal-content{
+			background-color: #fff;
+			width: 600px;
+    		max-height: 88%;
+    		border-radius: 6px;
+    		padding: 33px;
+
+    		.modal-header{
+    			display: block;
+    			overflow: hidden;
+
+				h2{
+					margin: 25px 0;
+				}
+
+    		}
+
+    		.modal-body{
+
+    		}
+		}
+
+		.fechar-modal{
+		    float: right;
+		    font-size: 30px;
+		    font-weight: 700;
+		    line-height: 1;
+		    color: #000;
+		    text-shadow: 0 1px 0 #fff;
+		    filter: alpha(opacity=20);
+		    opacity: .2;
+		    cursor: pointer;
+
+		    &:hover{
+			    text-decoration: none;
+			    cursor: pointer;
+			    filter: alpha(opacity=50);
+			    opacity: .5;
+		    }
+		}
+	}	
+}
+

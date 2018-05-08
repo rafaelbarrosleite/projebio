@@ -76,6 +76,27 @@ th {
   margin: 0 auto;
   display: block; }
 
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
+
+.titulo {
+  margin: 30px 0 5px; }
+
+.descricao-do-bloco {
+  margin-bottom: 30px;
+  line-height: 22px; }
+
+.blocos {
+  display: flex;
+  align-items: center; }
+
+p {
+  line-height: 24px;
+  font-size: 16px; }
+
 .grade {
   display: flex;
   align-items: center;
@@ -146,22 +167,75 @@ input {
   height: 44px;
   box-sizing: border-box; }
 
+input, textarea {
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  padding: 12px;
+  width: 100%; }
+
 button {
-  background-color: green;
+  cursor: pointer; }
+
+.botao {
   padding: 8px;
   height: 44px;
   box-sizing: border-box;
   border-radius: 3px;
   width: 200px;
   color: white;
-  border: none;
-  cursor: pointer; }
+  border: none; }
 
-input, textarea {
-  border: 1px solid #cecece;
-  border-radius: 3px;
-  padding: 12px;
-  width: 100%; }
+.acao-primaria {
+  background-color: green; }
+  .acao-primaria:hover {
+    background-color: #024e02; }
+
+.sem-preenchimento {
+  background-color: transparent; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.43);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0; }
+  .modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    .modal .modal-dialog .modal-content {
+      background-color: #fff;
+      width: 600px;
+      max-height: 88%;
+      border-radius: 6px;
+      padding: 33px; }
+      .modal .modal-dialog .modal-content .modal-header {
+        display: block;
+        overflow: hidden; }
+        .modal .modal-dialog .modal-content .modal-header h2 {
+          margin: 25px 0; }
+    .modal .modal-dialog .fechar-modal {
+      float: right;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      filter: alpha(opacity=20);
+      opacity: .2;
+      cursor: pointer; }
+      .modal .modal-dialog .fechar-modal:hover {
+        text-decoration: none;
+        cursor: pointer;
+        filter: alpha(opacity=50);
+        opacity: .5; }
 
 .cabecalho {
   display: flex;
@@ -208,17 +282,33 @@ input, textarea {
     left: 0;
     color: #00623e; }
 
+.banner img {
+  display: block;
+  margin: 0 auto; }
+
 body {
   font-family: 'Roboto'; }
 
 .produtos {
   text-align: center; }
   .produtos .lista-de-produtos .lista-de-produtos_item {
-    text-align: center; }
+    text-align: left; }
+    .produtos .lista-de-produtos .lista-de-produtos_item:first-child {
+      margin-right: 10%; }
+    .produtos .lista-de-produtos .lista-de-produtos_item img {
+      border-radius: 6px; }
     .produtos .lista-de-produtos .lista-de-produtos_item h3 {
       font-weight: bold;
-      font-size: 20px;
-      margin: 5px 0; }
+      font-size: 22px;
+      margin: 10px 0; }
+    .produtos .lista-de-produtos .lista-de-produtos_item .cotacao-do-dia strong {
+      color: #00623e; }
+    .produtos .lista-de-produtos .lista-de-produtos_item button {
+      border: 1px solid #00633f;
+      padding: 4px;
+      border-radius: 3px;
+      margin-top: 7px;
+      color: #00633f; }
 
 .sobre-a-empresa {
   height: 357px;

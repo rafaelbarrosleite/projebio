@@ -18,8 +18,20 @@ input{
 	box-sizing: border-box;
 }
 
+input, textarea{
+	border: 1px solid #cecece;
+	border-radius: 3px;
+	padding: 12px;
+	width: 100%;
+
+}
+
+
 button{
-	background-color: green;
+	cursor: pointer;
+}
+
+.botao{
 	padding: 8px;
 	height: 44px;
 	box-sizing: border-box;
@@ -27,15 +39,20 @@ button{
 	width: 200px;
 	color: white;
 	border: none;
-	cursor: pointer;
 
 }
 
 
-input, textarea{
-	border: 1px solid #cecece;
-	border-radius: 3px;
-	padding: 12px;
-	width: 100%;
 
+.acao-primaria{
+	background-color: green;
+
+	&:hover{
+		background-color: #024e02;
+	}
+}
+
+.sem-preenchimento{
+	background-color: transparent;
+		
 }

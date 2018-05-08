@@ -6,8 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8">
 		<title>Projebio</title>
 		<link rel="shortcut icon" href="favicon.ico" />
-
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>content/estilos/estilos.css" /> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<header class="cabecalho">
@@ -46,19 +46,64 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h2 class="titulo">Conheça nossos produtos</h2>
 				<p class="descricao-do-bloco">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o óleo de mamona e a torta de mamona.</p>
 				<div class="grade lista-de-produtos">
-					<div class="grade__coluna_6 lista-de-produtos_item">
+					<div class="grade__coluna_5 lista-de-produtos_item">
 						<img src="<?php echo base_url();?>content/img/oleo-de-mamona.jpg" alt="">
-						<h3>Óleo de mamona</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, adipisci.</p>
+						<h3>Óleo de algodão bruto</h3>
+						<div class="descricao">
+							<p>O Óleo de Algodão é extraído da semente de algodão que também é conhecida como caroço do algodão. É um produto utilizado para: produção de Biodiesel, Pulverização Agrícola e Refino.</p>
+						
+						</div>
+						<p class="cotacao-do-dia">
+							Cotação 05/06:
+							<strong>R$ 490,00 / Tonelada</strong>
+						</p>
+						<button type="button" class="sem-preenchimento" id="abrir-modal">Saiba mais</button>
 					</div>
-					<div class="grade__coluna_6 lista-de-produtos_item">
+					<div class="grade__coluna_5 lista-de-produtos_item">
 						<img src="<?php echo base_url();?>content/img/adubos-organico.jpg" alt="">
-						<h3>Torta de mamona</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, adipisci.</p>
+						<h3>Torta de algodão</h3>
+						<div class="descricao">
+							<p>
+								A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão, que ao ser esmagado, é denominado torta, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
+							</p>
+
+							<!-- <p>
+								Pode-se produzir dois tipos de torta: a torta gorda (5% de óleo residual) mais energética, proveniente da prensagem mecânica, e com um menor teor de proteína, e a chamada torta magra (menos de 2% de óleo residual), menos energética, oriunda da extração através de solventes, apresentando maior teor de proteínas. A torta de algodão é um produto utilizado com finalidades proteicas, sendo substituta do caroço de algodão e farelo de algodão, principalmente o 28% PB, na elaboração de dietas para ruminantes. Frequentemente ela é disponível, fora da safra do caroço de algodão, tornando-se então uma boa opção.
+							</p> -->
+						</div>
+						<p class="cotacao-do-dia">
+							Cotação 05/06:
+							<strong>R$ 490,00 / Tonelada</strong>
+						</p>
+						<button type="button" class="sem-preenchimento" id="abrir-modal">Saiba mais</button>
 					</div>
 				</div>
 			</section>
 		</main>
+		<div class="modal" id="modal" role="dialog">
+		    <div class="modal-dialog">
+		    	<div class="modal-content">
+			        <div class="modal-header">
+						<div type="button" class="fechar-modal sem-preenchimento">&times;
+						</div>
+						<h2>Óleo de algodão bruto</h2>
+			        </div>
+			        <div class="modal-body">
+			        	<p>
+							O óleo e muito utilizado no setor de comestíveis, como óleo para saladas, como óleo de cozinha é usado em frituras, tanto em cozinhas comerciais como nas caseiras.
+						</p>
+						<p>
+							Para as indústrias de biodiesel, o óleo de algodão tem a vantagem de ser mais barato que o de soja. É por isso que esse óleo acabou conquistando espaço e se tornando uma das matérias-primas mais usadas para produção de biodiesel no Brasil.
+						</p>	
+						<p>
+							O óleo também vem sendo utilizado no combate às pragas das lavouras, principalmente nas plantações de coco. Por ser um produto natural, não agride o meio ambiente, não compromete a saúde do agricultor e é de fácil manuseio.
+						</p>	
+			        </div>
+		        </div>
+		    </div>
+		</div>
+
+
 		<div class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem2.jpg");		">
 			<main class="conteudo">
 				<div class="grade">
@@ -149,48 +194,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<textarea name="" id="comentario" cols="30" rows="10"></textarea>
 						</div> 
 					</div>
-					<button type="submit">Enviar</button>
+					<button class="botao acao-primaria" type="submit">Enviar</button>
 				</form>
 			</div>
-
 		</section>
 	</body>
 </html>
 
-<style type="text/css">
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#abrir-modal").click(function(){
+	        $("#modal").toggle();
+	    });
 
-
-
-
-h2{
-	font-size: 24px;
-}
-
-.titulo{
-	margin: 30px 0 5px;
-}
-
-.descricao-do-bloco{
-	margin-bottom: 30px;
-	line-height: 22px;
-}
-
-
-
-.blocos{
-	display: flex;
-	align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
+	     $(".fechar-modal").click(function(){
+	        $("#modal").toggle();
+	    });
+	});
+</script>
