@@ -5,6 +5,12 @@
 		
 		.lista-de-produtos_item{
 			text-align: left;
+			background-color: white;
+			border: 1px solid #e1e8ed;
+			color: #666666;
+			word-break: break-word;
+			padding: 30px;
+			border-radius: 6px;
 
 
 			&:first-child{
@@ -22,6 +28,7 @@
 			}
 
 			.cotacao-do-dia{
+				margin-top: 12px;
 				strong{
 					color:  #00623e;
 				}
@@ -39,3 +46,15 @@
 	}
 }
 
+
+.cotacao{
+
+	.cotacao_item{
+		margin-right: 8px;
+
+		.valor{
+		    color: #00623e;
+    		font-weight: bold;
+		}
+	}
+}

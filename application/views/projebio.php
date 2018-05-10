@@ -16,13 +16,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<a href="" class="logo grade__coluna_2">
 						<img src="<?php echo base_url();?>content/img/logo.png" alt="Logo da empresa">
 					</a> 
-					<nav class="menu grade__coluna_7"> 
-						<a class="menu_link" href="">Página inicial</a>
-						<a class="menu_link" href="">Produtos</a>
-						<a class="menu_link" href="">Indústria</a>
-						<a class="menu_link" href="">Quem somos</a>
-						<a class="menu_link" href="">Fale Conosco</a>
+					<nav class="menu grade__coluna_6"> 
+						<a class="menu_link" href="#produtos">Produtos</a>
+						<a class="menu_link" href="#quemSomos">Quem somos</a>
+						<a class="menu_link" href="#industria">Indústria</a>
+						<a class="menu_link" href="#faleConosco">Fale Conosco</a>
 					</nav>
+					<section class="grade grade__coluna_3 cotacao">
+						<div class="cotacao_item">
+							<span class="tipo">Óleo de algodão</span>
+							<div class="valor">R$ 3,595/Ton</div>
+						</div>
+						<div class="cotacao_item">
+							<span class="tipo">Torta de algodão</span>
+							<div class="valor">R$ 3,595/Ton</div>
+						</div>
+					</section>
 					<section class="contato-cabecalho grade__coluna_3 grade">
 						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone.png">
 						<div class="texto"> 
@@ -41,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<img src="<?php echo base_url();?>content/img/imagem-banner.jpg" alt="">
 			</div>
 		</section>
-		<main class="conteudo">
+		<main id="produtos" class="conteudo">
 			<section class="produtos"> 
 				<h2 class="titulo">Conheça nossos produtos</h2>
 				<p class="descricao-do-bloco">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o óleo de mamona e a torta de mamona.</p>
@@ -64,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<h3>Torta de algodão</h3>
 						<div class="descricao">
 							<p>
-								A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão, que ao ser esmagado, é denominado torta, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
+								A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
 							</p>
 
 							<!-- <p>
@@ -104,7 +113,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 
-		<div class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem2.jpg");		">
+		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem2.jpg");		">
 			<main class="conteudo">
 				<div class="grade">
 					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
@@ -123,7 +132,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				 </div>	
 			</main>
 		</div>
-		<section class="conteudo fotos-da-empresa">
+		<section id="industria" class="conteudo fotos-da-empresa">
 			<div class="grade">
 				<div class="fotos-da-empresa_item grade__coluna_3">
 					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
@@ -140,7 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			
 		</section>
-		<section class="entre-em-contato">
+		<section id="faleConosco" class="entre-em-contato">
 			<div class="conteudo">
 				<h2 class="titulo">Venha nos conhecer</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolor, iste facere!</p>
@@ -211,4 +220,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	        $("#modal").toggle();
 	    });
 	});
+
+	$('.menu_link').click(function(){
+		$('html, body').animate({
+		scrollTop: $( $(this).attr('href') ).offset().top
+		}, 2500);
+		return false;
+	});
 </script>
+
+

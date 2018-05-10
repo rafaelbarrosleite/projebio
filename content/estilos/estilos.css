@@ -292,7 +292,13 @@ body {
 .produtos {
   text-align: center; }
   .produtos .lista-de-produtos .lista-de-produtos_item {
-    text-align: left; }
+    text-align: left;
+    background-color: white;
+    border: 1px solid #e1e8ed;
+    color: #666666;
+    word-break: break-word;
+    padding: 30px;
+    border-radius: 6px; }
     .produtos .lista-de-produtos .lista-de-produtos_item:first-child {
       margin-right: 10%; }
     .produtos .lista-de-produtos .lista-de-produtos_item img {
@@ -301,14 +307,23 @@ body {
       font-weight: bold;
       font-size: 22px;
       margin: 10px 0; }
-    .produtos .lista-de-produtos .lista-de-produtos_item .cotacao-do-dia strong {
-      color: #00623e; }
+    .produtos .lista-de-produtos .lista-de-produtos_item .cotacao-do-dia {
+      margin-top: 12px; }
+      .produtos .lista-de-produtos .lista-de-produtos_item .cotacao-do-dia strong {
+        color: #00623e; }
     .produtos .lista-de-produtos .lista-de-produtos_item button {
       border: 1px solid #00633f;
-      padding: 4px;
+      padding: 5px 8px;
       border-radius: 3px;
       margin-top: 7px;
-      color: #00633f; }
+      color: #00633f;
+      font-size: 14px; }
+
+.cotacao .cotacao_item {
+  margin-right: 8px; }
+  .cotacao .cotacao_item .valor {
+    color: #00623e;
+    font-weight: bold; }
 
 .sobre-a-empresa {
   height: 357px;
