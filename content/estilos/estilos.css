@@ -237,6 +237,119 @@ button {
         filter: alpha(opacity=50);
         opacity: .5; }
 
+.banner {
+  height: 450px;
+  position: relative;
+  overflow: hidden; }
+  .banner figure {
+    max-width: 100%;
+    height: 80%; }
+    .banner figure:hover span {
+      opacity: 0.76;
+      filter: alpha(opacity=76); }
+    .banner figure .setas {
+      background: #fff;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      position: absolute;
+      bottom: 40%;
+      width: 43px;
+      height: 43px;
+      border-radius: 52%;
+      z-index: 5;
+      -webkit-transition: all ease-out 0.5s;
+      -moz-transition: all ease-out 0.5s;
+      -o-transition: all ease-out 0.5s;
+      -ms-transition: all ease-out 0.5s;
+      transition: all ease-out 0.5s; }
+  .banner .banner_imagens {
+    position: relative;
+    z-index: 1; }
+    .banner .banner_imagens .imagens {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      width: 100%; }
+      .banner .banner_imagens .imagens img {
+        margin: 0 auto;
+        display: block;
+        height: 437px;
+        width: 100%; }
+
+.ativo {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important; }
+
+.next {
+  right: 10px; }
+  .next:before, .next:after {
+    left: 21px; }
+  .next:before {
+    -webkit-transform: rotate(-42deg);
+    top: 5px; }
+  .next:after {
+    -webkit-transform: rotate(-132deg);
+    top: 19px; }
+  .next:before, .next:after {
+    content: "";
+    height: 20px;
+    background: #000;
+    width: 1px;
+    position: absolute; }
+
+.prev {
+  left: 10px; }
+  .prev:before, .prev:after {
+    content: "";
+    height: 20px;
+    background: #000;
+    width: 1px;
+    position: absolute; }
+  .prev:before, .prev:after {
+    left: 18px; }
+  .prev:before {
+    -webkit-transform: rotate(42deg);
+    top: 5px; }
+  .prev:after {
+    -webkit-transform: rotate(132deg);
+    top: 19px; }
+
+figcaption {
+  padding: 7px 15px;
+  color: #322e15;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.76);
+  -webkit-box-shadow: 0 0 18px rgba(0, 1, 1, 0.24);
+  -moz-box-shadow: 0 0 18px rgba(0, 1, 1, 0.24);
+  box-shadow: 0 0 18px rgba(0, 1, 1, 0.24);
+  width: 58%;
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  line-height: 55px;
+  height: 74px;
+  z-index: 5; }
+
+.ligue-nos {
+  background-color: #00623e;
+  padding: 10px;
+  margin: 34px auto 0 auto;
+  width: 90%;
+  border-radius: 5px;
+  color: #fff; }
+  .ligue-nos .icone {
+    font-size: 23px;
+    margin-right: 10px; }
+  .ligue-nos .texto {
+    font-size: 16px; }
+    .ligue-nos .texto .numero-do-telefone {
+      color: #fc0;
+      font-size: 22px;
+      font-weight: 600; }
+
 .cabecalho {
   display: flex;
   height: 70px;
@@ -282,10 +395,6 @@ button {
     left: 0;
     color: #00623e; }
 
-.banner img {
-  display: block;
-  margin: 0 auto; }
-
 body {
   font-family: 'Roboto'; }
 
@@ -297,27 +406,38 @@ body {
     border: 1px solid #e1e8ed;
     color: #666666;
     word-break: break-word;
-    padding: 30px;
     border-radius: 6px; }
     .produtos .lista-de-produtos .lista-de-produtos_item:first-child {
       margin-right: 10%; }
-    .produtos .lista-de-produtos .lista-de-produtos_item img {
-      border-radius: 6px; }
+    .produtos .lista-de-produtos .lista-de-produtos_item .foto-do-produto {
+      position: relative; }
+      .produtos .lista-de-produtos .lista-de-produtos_item .foto-do-produto .cotacao-do-dia {
+        position: absolute;
+        top: 2%;
+        right: 0;
+        margin: 13px;
+        background-color: #29b716;
+        padding: 8px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 12px; }
+    .produtos .lista-de-produtos .lista-de-produtos_item .descricao-do-produto {
+      padding: 30px; }
     .produtos .lista-de-produtos .lista-de-produtos_item h3 {
       font-weight: bold;
       font-size: 22px;
       margin: 10px 0; }
-    .produtos .lista-de-produtos .lista-de-produtos_item .cotacao-do-dia {
-      margin-top: 12px; }
-      .produtos .lista-de-produtos .lista-de-produtos_item .cotacao-do-dia strong {
-        color: #00623e; }
     .produtos .lista-de-produtos .lista-de-produtos_item button {
       border: 1px solid #00633f;
-      padding: 5px 8px;
+      padding: 6px 8px;
       border-radius: 3px;
       margin-top: 7px;
       color: #00633f;
-      font-size: 14px; }
+      font-size: 14px;
+      font-weight: bold; }
+      .produtos .lista-de-produtos .lista-de-produtos_item button:hover {
+        background-color: #00633f;
+        color: #fff; }
 
 .cotacao .cotacao_item {
   margin-right: 8px; }
@@ -327,7 +447,7 @@ body {
 
 .sobre-a-empresa {
   height: 357px;
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 70px 0 0 0;
   background-size: 100% !important;
   margin-bottom: 45px;
