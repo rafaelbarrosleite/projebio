@@ -154,7 +154,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			</section>
 		</div>
-		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem-empresa.jpg");		">
+		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem-empresa.jpg");		>
 			<main class="conteudo">
 				<div class="grade">
 					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
