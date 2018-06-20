@@ -8,8 +8,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>content/estilos/estilos.css" /> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-
 	</head>
 	<body>
 		<header class="cabecalho">
@@ -194,25 +192,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="conteudo">
 				<h2 class="titulo">Entre em contato conosco</h2>
 				<p>Fale diretamente com a Projebio. Basta enviar as informações abaixo que entraremos em contato.</p>
-				<form class="formulario-de-contato">
+				<form class="formulario-de-contato" role="form" method="post" action="<?php echo base_url()?>base/salvarContato">
 					<div class="grade">
 						<div class="formulario-de-contato_item grade__coluna_5">
 							<label for="nome">Qual o seu nome?</label>
-							<input type="text" id="nome">
+							<input type="text" class="form-control" id="nome" name="nome" required>
 						</div> 
 						<div class="formulario-de-contato_item  grade__coluna_2">
 							<label for="telefone">Telefone:</label>
-							<input type="text" id="telefone">
+							<input type="text" class="form-control" id="telefone" name="telefone" required>
 						</div> 
 						<div class="formulario-de-contato_item  grade__coluna_4">
 							<label for="email">E-mail:</label>
-							<input type="text" id="email">
+							<input type="text" class="form-control" id="email" name="email" required>
 						</div>
 					</div>
 					<div class="grade">
 						<div class="formulario-de-contato_item  grade__coluna_12">
 							<label for="comentario">Diga nos o que precisa:</label>
-							<textarea name="" id="comentario" cols="30" rows="10"></textarea>
+							<textarea class="form-control" id="comentario" cols="30" rows="10" name="comentario" required></textarea>
 						</div> 
 					</div>
 					<button class="botao acao-primaria" type="submit">Enviar</button>
