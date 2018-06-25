@@ -1,24 +1,18 @@
 .cabecalho{
-	display: flex;
-	height: 70px;
-	padding: 12px;
-	align-items: center;
-
-	.logo{
-		width: 200px;
-	}
-
 	.contato-cabecalho{
 		text-align: right;
 			
 		.icone{
-    		margin-right: 10px;
+    		margin: 10px;
+			height: 40px;
 		}
 
 		.texto{
 			font-size: 16px;
 			font-style: italic;
 			text-align: left;
+			line-height: 19px;
+    		margin: 7px 0;
 
 			.numero-do-telefone{	
 				font-size: 20px;

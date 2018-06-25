@@ -11,40 +11,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 	<body>
 		<header class="cabecalho">
-			<div class="conteudo">
-				<div class="grade">
-					<a href="" class="logo grade__coluna_2">
-						<img src="<?php echo base_url();?>content/img/logo.png" alt="Logo da empresa">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="" class="logo grade__coluna_2">
+						<img src="<?php echo base_url();?>content/img/logo.png" alt="Projebio: Óleos e tortas vegetais" width="185" height="63">
 					</a> 
-					<nav class="menu grade__coluna_6"> 
-						<a class="menu_link" href="#produtos">Produtos</a>
-						<a class="menu_link" href="#quemSomos">Quem somos</a>
-						<a class="menu_link" href="#industria">Indústria</a>
-						<a class="menu_link" href="#faleConosco">Fale Conosco</a>
-					</nav>
-					<section class="grade grade__coluna_3 cotacao">
-						<div class="cotacao_item">
-							<span class="tipo">Óleo de algodão</span>
-							<div class="valor">R$ 3,595/KG</div>
-						</div>
-						<div class="cotacao_item">
-							<span class="tipo">Torta de algodão</span>
-							<div class="valor">R$ 3,59/Ton</div>
-						</div>
-					</section>
-					<section class="contato-cabecalho grade__coluna_3 grade">
-						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone.png">
-						<div class="texto"> 
-							Entre em contato
-							<div class="numero-do-telefone">
-								(67) 9 9920-3974
-							</div>
-						</div>
-					</section>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+					  <span aria-hidden="true"></span>
+					  <span aria-hidden="true"></span>
+					  <span aria-hidden="true"></span>
+					</a>
 				</div>
-			</div>	
+				<div class="navbar-menu is-active">
+					<a class="navbar-item" href="#produtos">Produtos</a>
+					<a class="navbar-item" href="#quemSomos">Quem somos</a>
+					<a class="navbar-item" href="#industria">Indústria</a>
+					<a class="navbar-item" href="#faleConosco">Fale Conosco</a>
+			  	</div>
+			  	<section class="navbar-menu cotacao">
+					<div class="cotacao_item">
+						<span class="tipo">Óleo de algodão</span>
+						<div class="valor">R$ 3,595/KG</div>
+					</div>
+					<div class="cotacao_item">
+						<span class="tipo">Torta de algodão</span>
+						<div class="valor">R$ 3,59/Ton</div>
+					</div>
+				</section>
+				<section class="contato-cabecalho navbar-menu">
+					<img class="icone" src="<?php echo base_url();?>content/img/ic-phone.png">
+					<div class="texto"> 
+						Entre em contato
+						<div class="numero-do-telefone">
+							(67) 9 9920-3974
+						</div>
+					</div>
+				</section>
+			</nav>
 		</header>
-
 		<section class="banner"> 
 			<figure>	
 				<span class="setas passador next"></span>
@@ -58,49 +62,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</figure>
-		   <figcaption></figcaption>
 		</section> 
 		<main id="produtos" class="conteudo">
 			<section class="produtos"> 
-				<h2 class="titulo">Conheça nossos produtos</h2>
-				<p class="descricao-do-bloco">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o óleo de mamona e a torta de mamona.</p>
-				<div class="grade lista-de-produtos">
-					<div class="grade__coluna_5 lista-de-produtos_item">
-						<div class="foto-do-produto">
-							<img src="<?php echo base_url();?>content/img/oleo-de-mamona.jpg" alt="">
-							<p class="cotacao-do-dia">
-								R$ 3,595/KG
-							</p>
-						</div>
-						<div class="descricao-do-produto">
-							<h3>Óleo de algodão bruto</h3>
-							<div class="descricao">
-								<p>O Óleo de Algodão é extraído da semente de algodão que também é conhecida como caroço do algodão. É um produto utilizado para: produção de Biodiesel, Pulverização Agrícola e Refino.</p>
-							
-							</div>
-						
-							<button type="button" class="sem-preenchimento" id="abrir-modal">Saiba mais</button>
-						</div>
+				<h3 class="title is-3">Conheça nossos produtos</h3>
+				<p class="subtitle is-5">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o óleo de mamona e a torta de mamona.</p>
+				<div class="columns">
+					<div class="card column">
+					  <div class="card-image">
+					    <figure class="image is-4by3">
+					      <img src="<?php echo base_url();?>content/img/oleo-de-mamona.jpg" alt="">
+					    </figure>
+					  </div>
+					  <div class="card-content">
+					    <div class="media">
+					      <div class="media-content">
+					        <p class="title is-4">Óleo de algodão bruto</p>
+					        <span class="tag is-info">R$ 3,595/KG</span>
+					      </div>
+					    </div>
+
+					    <div class="content">
+											A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
+					     
+					     <button type="button" class="sem-preenchimento" id="abrir-modal">Ficha técnica</button>
+					    </div>
+					  </div>
 					</div>
-					<div class="grade__coluna_5 lista-de-produtos_item">
-						<div class="foto-do-produto">
-							<img src="<?php echo base_url();?>content/img/adubos-organico.jpg" alt="">
-							<p class="cotacao-do-dia">
-								R$ 3,59/Ton
-							</p>
-						</div>
+					<div class="card column">
+					  <div class="card-image">
+					    <figure class="image is-4by3">
+					      <img src="<?php echo base_url();?>content/img/adubos-organico.jpg" alt="">
+					    </figure>
+					  </div>
+					  <div class="card-content">
+					    <div class="media">
+					      <div class="media-content">
+					        <p class="title is-4">Torta de algodão</p>
+					        <span class="tag is-info">R$ 3,59/Ton</span>
+					      </div>
+					    </div>
 
-
-						<div class="descricao-do-produto">
-							<h3>Torta de algodão</h3>
-							<div class="descricao">
-								<p>
-									A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
-								</p>
-							</div>
-					
-							<button type="button" class="sem-preenchimento" id="abrir-modal">Saiba mais</button>
-						</div>	
+					    <div class="content">
+											A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
+					     
+					     <button type="button" class="sem-preenchimento" id="abrir-modal">Ficha técnica</button>
+					    </div>
+					  </div>
 					</div>
 				</div>
 			</section>
@@ -127,35 +135,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		        </div>
 		    </div>
 		</div>
-		<div class="ligue-nos grade">
-			<section class="grade__coluna_5">
-				<div class="grade">
-					<img class="icone" src="<?php echo base_url();?>content/img/ic-phone-branco.png">
-					<div class="texto grade__coluna_8"> 
-						Ligue agora
-						<div class="numero-do-telefone">
-							(67) 9 9920-3974
+		<section class="ligue-nos hero">
+		  <div class="hero-body">
+		    <div class="container columns">
+			  <section class="column">
+					<div class="columns">
+						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone-branco.png">
+						<div class="texto column is-8"> 
+							Ligue agora
+							<div class="numero-do-telefone">
+								(67) 9 9920-3974
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="grade__coluna_5">
-				<div class="grade">
-					<img class="icone" src="<?php echo base_url();?>content/img/ic-email.png">
-					<div class="texto grade__coluna_8"> 
-						Atendimento por e-mail
-						<div class="numero-do-telefone">
-							vendas@projebio.com.br
+				</section>
+				<section class="column">
+					<div class="columns">
+						<img class="icone" src="<?php echo base_url();?>content/img/ic-email.png">
+						<div class="texto column is-8"> 
+							Atendimento por e-mail
+							<div class="numero-do-telefone">
+								vendas@projebio.com.br
+							</div>
 						</div>
 					</div>
-				</div>
-
-			</section>
-		</div>
+				</section>
+		    </div>
+		  </div>
+		</section>
 		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem-empresa.jpg");		>
 			<main class="conteudo">
 				<div class="grade">
-					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
 					<div class="informacoes-sobre-a-empresa"> 
 						<h2>A PROJEBIO</h2>
 						<p>
@@ -171,44 +181,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				 </div>	
 			</main>
 		</div>
-		<section id="industria" class="conteudo fotos-da-empresa">
-			<div class="grade">
-				<div class="fotos-da-empresa_item grade__coluna_3">
-					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
-					<h3>Lorem Ipsum Dolor</h3>
-				</div>
-				<div class="fotos-da-empresa_item grade__coluna_3">
-					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
-					<h3>Lorem Ipsum Dolor</h3>
-				</div>
-				<div class="fotos-da-empresa_item grade__coluna_3">
-					<img class="imagem-da-empresa" src="<?php echo base_url();?>content/img/edificio.jpg" alt="">
-					<h3>Lorem Ipsum Dolor</h3>
-				</div>
+		<div class="columns">	
+			<div class="card column">
+			  <div class="card-image">
+			    <figure class="image is-4by3">
+			      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			    </figure>
+			  </div>
 			</div>
-		</section>
-
+			<div class="card column">
+			  <div class="card-image">
+			    <figure class="image is-4by3">
+			      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			    </figure>
+			  </div>
+			</div>
+			<div class="card column">
+			  <div class="card-image">
+			    <figure class="image is-4by3">
+			      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			    </figure>
+			  </div>
+			</div>
+		</div>
 		<section id="faleConosco" class="entre-em-contato">
 			<div class="conteudo">
 				<h2 class="titulo">Entre em contato conosco</h2>
 				<p>Fale diretamente com a Projebio. Basta enviar as informações abaixo que entraremos em contato.</p>
 				<form class="formulario-de-contato" role="form" method="post" action="<?php echo base_url()?>base/salvarContato">
-					<div class="grade">
-						<div class="formulario-de-contato_item grade__coluna_5">
+					<div class="columns">
+						<div class="formulario-de-contato_item column is-5">
 							<label for="nome">Qual o seu nome?</label>
 							<input type="text" class="form-control" id="nome" name="nome" required>
 						</div> 
-						<div class="formulario-de-contato_item  grade__coluna_2">
+						<div class="formulario-de-contato_item column is-3">
 							<label for="telefone">Telefone:</label>
 							<input type="text" class="form-control" id="telefone" name="telefone" required>
 						</div> 
-						<div class="formulario-de-contato_item  grade__coluna_4">
+						<div class="formulario-de-contato_item  column is-4">
 							<label for="email">E-mail:</label>
 							<input type="text" class="form-control" id="email" name="email" required>
 						</div>
 					</div>
-					<div class="grade">
-						<div class="formulario-de-contato_item  grade__coluna_12">
+					<div class="columns">
+						<div class="formulario-de-contato_item column is-12">
 							<label for="comentario">Diga nos o que precisa:</label>
 							<textarea class="form-control" id="comentario" cols="30" rows="10" name="comentario" required></textarea>
 						</div> 
@@ -220,8 +236,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h2 class="titulo">ou se preferir, Venha nos conhecer</h2>
 				<p></p>
 			</div>
-			<div class="localizacao grade">
-				<div class="localizacao_item grade__coluna_5">
+			<div class="localizacao columns">
+				<div class="localizacao_item column is-6">
 					<div class="mapa">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.9834709004294!2d-54.61935268555817!3d-20.465872060479814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e618848ea35d%3A0x865d3df35f71a980!2sR.+Quinze+de+Novembro%2C+310+-+Centro%2C+Campo+Grande+-+MS%2C+79002-140!5e0!3m2!1spt-BR!2sbr!4v1525314798460" width="500" height="282" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
@@ -229,7 +245,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<strong>Escritório:</strong> Rua XV de Novembro, 310, Sala 901 - Campo Grande/MS - Cep: 79.002-040 
 					</div>
 				</div>
-				<div class="localizacao_item grade__coluna_5">
+				<div class="localizacao_item column is-6">
 					<div class="mapa">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d142542.43137818173!2d-54.459035340562366!3d-20.145231166058277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fa68e43b9afbfd%3A0x609247e722644dd7!2sBR-163%2C+Mato+Grosso+do+Sul!5e0!3m2!1spt-BR!2sbr!4v1525314764992" width="500" height="282" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
@@ -240,12 +256,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</section>
-		<footer class="grade">
-			<div class="grade__coluna_8">
-				2015 © Projebio - Óleos e tortas vegetais. Todos dos direitos reservados.
-			</div>
+		<footer class="footer">
+		  <div class="content has-text-centered">
+		    <p>
+		      2015 © Projebio - Óleos e tortas vegetais. Todos dos direitos reservados.
+		    </p>
+		  </div>
 		</footer>
-
 	</body>
 </html>
 
@@ -345,7 +362,37 @@ function setaImagem(){
 
 	window.addEventListener("load",setaImagem,false);
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
 </script>
+
+
+
 
 <style>
 	
