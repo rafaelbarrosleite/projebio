@@ -8,6 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>content/estilos/estilos.css" /> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="<?php echo base_url();?>content/js/menu-hamburguer.js"></script>
+		<script src="<?php echo base_url();?>content/js/modal.js"></script>
+		<script src="<?php echo base_url();?>content/js/notificacao.js"></script>
+
 	</head>
 	<body>
 		<header class="cabecalho">
@@ -22,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					  <span aria-hidden="true"></span>
 					</a>
 				</div>
-				<div class="navbar-menu is-active">
+				<div class="navbar-menu">
 					<a class="navbar-item" href="#produtos">Produtos</a>
 					<a class="navbar-item" href="#quemSomos">Quem somos</a>
 					<a class="navbar-item" href="#industria">Indústria</a>
@@ -38,9 +42,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="valor">R$ 3,59/Ton</div>
 					</div>
 				</section>
-				<section class="contato-cabecalho navbar-menu">
-					<img class="icone" src="<?php echo base_url();?>content/img/ic-phone.png">
-					<div class="texto"> 
+				<section class="contato-cabecalho navbar-menu columns">
+					<div class="column is-2">
+						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone.png">
+					</div>	
+					<div class="texto column is-8"> 
 						Entre em contato
 						<div class="numero-do-telefone">
 							(67) 9 9920-3974
@@ -55,18 +61,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		   		<span class="setas passador prev"></span>		
 				<div class="banner_imagens" id="slider">
 					<div class="passador imagens">
-						<img src="<?php echo base_url();?>content/img/imagem1.jpg" alt="Adubos orgânicos para gados">
+						<img src="<?php echo base_url();?>content/img/img-1.jpg" alt="Adubos orgânicos para gados">
 					</div>
 					<div class="passador imagens">
-						<img src="<?php echo base_url();?>content/img/imagem2.jpg" alt="Plantio de algodão">
+						<img src="<?php echo base_url();?>content/img/img-2.jpg" alt="Plantio de algodão">
+					</div>
+					<div class="passador imagens">
+						<img src="<?php echo base_url();?>content/img/img-3.jpg" alt="Plantio de algodão">
 					</div>
 				</div>
 			</figure>
+		   <figcaption></figcaption>
 		</section> 
 		<main id="produtos" class="conteudo">
 			<section class="produtos"> 
 				<h3 class="title is-3">Conheça nossos produtos</h3>
-				<p class="subtitle is-5">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o óleo de mamona e a torta de mamona.</p>
+				<p class="subtitle is-6">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o <strong>Óleo de mamona</strong> e a<strong> Torta de mamona</strong>.</p>
 				<div class="columns">
 					<div class="card column">
 					  <div class="card-image">
@@ -83,9 +93,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    </div>
 
 					    <div class="content">
-											A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
+							A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
 					     
-					     <button type="button" class="sem-preenchimento" id="abrir-modal">Ficha técnica</button>
+					     <button type="button" id="abrir-modal">Ficha técnica</button>
 					    </div>
 					  </div>
 					</div>
@@ -165,20 +175,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</section>
 		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem-empresa.jpg");		>
 			<main class="conteudo">
-				<div class="grade">
-					<div class="informacoes-sobre-a-empresa"> 
-						<h2>A PROJEBIO</h2>
-						<p>
-							A PROJEBIO é uma empresa de processamento de mamona, que fornece para o mercado brasileiro óleo de mamona tipo 1 e adubos orgânicos à base de torta de mamona, que são excelentes fertilizantes pelo alto teor de nitrogênio.
-
-							A empresa investe, continuamente, em tecnologia e inovação e, possui um rigoroso controle de qualidade de seus produtos.
-
-							A nossa missão é a excelência em qualidade industrial e operacional, atrelada a sustentabilidade ambiental e compromisso social.
-
-							Nossas instalações estão localizadas em Jaraguari-MS a 45km da capital.
-						</p>
-					</div>
-				 </div>	
+				<h2 class="title is-3">A PROJEBIO</h2>
+				<p class="subtitle is-6">
+					A PROJEBIO é uma empresa de processamento de mamona, que fornece para o mercado brasileiro óleo de mamona tipo 1 e adubos orgânicos à base de torta de mamona, que são excelentes fertilizantes pelo alto teor de nitrogênio.
+					<br>	
+					A empresa investe, continuamente, em tecnologia e inovação e, possui um rigoroso controle de qualidade de seus produtos.
+					<br>
+					A nossa missão é a excelência em qualidade industrial e operacional, atrelada a sustentabilidade ambiental e compromisso social.
+					<br>
+					Nossas instalações estão localizadas em Jaraguari-MS a 45km da capital.
+				</p>
 			</main>
 		</div>
 		<div class="columns">	
@@ -206,8 +212,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<section id="faleConosco" class="entre-em-contato">
 			<div class="conteudo">
-				<h2 class="titulo">Entre em contato conosco</h2>
-				<p>Fale diretamente com a Projebio. Basta enviar as informações abaixo que entraremos em contato.</p>
+				<h2 class="title is-4">Entre em contato conosco</h2>
+				<p class="subtitle is-6">Fale diretamente com a Projebio. Basta enviar as informações abaixo que entraremos em contato.</p>
 				<form class="formulario-de-contato" role="form" method="post" action="<?php echo base_url()?>base/salvarContato">
 					<div class="columns">
 						<div class="formulario-de-contato_item column is-5">
@@ -229,11 +235,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<textarea class="form-control" id="comentario" cols="30" rows="10" name="comentario" required></textarea>
 						</div> 
 					</div>
-					<button class="botao acao-primaria" type="submit">Enviar</button>
+					<div class="columns">
+						<div class="column">	
+							<button id="enviarMensagem" class="botao acao-primaria" type="submit">Enviar</button>
+						</div>
+					</div>
 				</form>
 			</div>
 			<div class="conteudo">
-				<h2 class="titulo">ou se preferir, Venha nos conhecer</h2>
+				<h2 class="title is-4">ou se preferir, Venha nos conhecer</h2>
 				<p></p>
 			</div>
 			<div class="localizacao columns">
@@ -263,31 +273,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </p>
 		  </div>
 		</footer>
+
+		<div class="notification is-success">
+		  <button class="delete"></button>
+		  Sua mensagem foi enviada com sucesso!
+		  Obrigado.
+		</div>
 	</body>
 </html>
-
 <script type="text/javascript">
-	$(document).ready(function(){
-	    $("#abrir-modal").click(function(){
-	        $("#modal").toggle();
-	    });
-
-	     $(".fechar-modal").click(function(){
-	        $("#modal").toggle();
-	    });
-	});
-
-	$('.menu_link').click(function(){
-		$('html, body').animate({
-		scrollTop: $( $(this).attr('href') ).offset().top
-		}, 2500);
-		return false;
-	});
-
-
-
-
-function setaImagem(){
+	function setaImagem(){
     var settings = {
         primeiraImg: function(){
             elemento = document.querySelector("#slider .imagens:first-child");
@@ -361,39 +356,4 @@ function setaImagem(){
 	}
 
 	window.addEventListener("load",setaImagem,false);
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
-  // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-
-    // Add a click event on each of them
-    $navbarBurgers.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-
-        // Get the target from the "data-target" attribute
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
-
-        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-        $el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
-      });
-    });
-  }
-
-});
 </script>
-
-
-
-
-<style>
-	
-</style>

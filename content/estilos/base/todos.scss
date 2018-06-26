@@ -46,7 +46,17 @@ p{
 
 .formulario-de-contato{
 	.columns {
-	    margin-left: 0 !important;
+	    margin-left: 0  !important;
 	    margin-right: 0 !important; 
 	}
 }
+
+.notification{
+	width: 358px;
+    position: fixed!important;
+    bottom: 27px;
+    z-index: 2;
+    right: 27px;
+    display: none;
+}
+

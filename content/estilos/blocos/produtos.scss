@@ -1,63 +1,25 @@
+
+
 .produtos{
 	text-align: center;
-
-	.lista-de-produtos {
-		
-		.lista-de-produtos_item{
-			text-align: left;
-			background-color: white;
-			border: 1px solid #e1e8ed;
-			color: #666666;
-			word-break: break-word;
-			border-radius: 6px;
-
-
-			&:first-child{
-				margin-right: 10%;
-			}
-			
-			.foto-do-produto{
-				position: relative;
-
-				.cotacao-do-dia{
-				    position: absolute;
-				    top: 2%;
-				    right: 0;
-				    margin: 13px;
-				    background-color: #29b716;
-				    padding: 8px;
-				    border-radius: 6px;
-				    color: #fff;
-				    font-size: 12px;
-				}
-			}
-		
-			.descricao-do-produto{
-				padding: 30px;
-			}
-
 	
-			h3{
-				font-weight: bold;
-				font-size: 22px;
-    			margin: 10px 0;
-			}
+	.card{
+		text-align: left;
 
+		button{
+			display: block;
+			border: 1px solid #00633f;
+			padding: 6px 8px;
+			border-radius: 3px;
+			margin-top: 7px;
+			color: #00633f;
+			font-size: 14px;
+			font-weight: bold;
+		    background: transparent;
 
-			button{
-			    border: 1px solid #00633f;
-			    padding: 6px 8px;
-			    border-radius: 3px;
-			    margin-top: 7px;
-			    color: #00633f;
-			    font-size: 14px;
-			    font-weight: bold;
-
-
-			    &:hover{
-			    	background-color: #00633f;
-			    	color: #fff;
-			    }
+			&:hover{
+				background-color: #00633f;
+				color: #fff;
 			}
 		}
 	}
@@ -65,7 +27,6 @@
 
 
 .cotacao{
-
 	.cotacao_item{
 		margin-right: 8px;
 

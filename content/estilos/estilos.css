@@ -102,8 +102,16 @@ p {
   margin: 14px 14px 0; }
 
 .formulario-de-contato .columns {
-  margin-left: 0 !important;
+  margin-left: 0  !important;
   margin-right: 0 !important; }
+
+.notification {
+  width: 358px;
+  position: fixed !important;
+  bottom: 27px;
+  z-index: 2;
+  right: 27px;
+  display: none; }
 
 .formulario-de-contato {
   width: 100%;
@@ -330,48 +338,28 @@ button {
 body {
   font-family: 'Roboto'; }
 
+@media screen and (max-width: 1087px) {
+  .navbar-menu.cotacao, .contato-cabecalho {
+    display: none !important; } }
 .footer {
   background-color: #e8e8e8 !important;
   padding: 3rem 1.5rem 3rem !important; }
 
 .produtos {
   text-align: center; }
-  .produtos .lista-de-produtos .lista-de-produtos_item {
-    text-align: left;
-    background-color: white;
-    border: 1px solid #e1e8ed;
-    color: #666666;
-    word-break: break-word;
-    border-radius: 6px; }
-    .produtos .lista-de-produtos .lista-de-produtos_item:first-child {
-      margin-right: 10%; }
-    .produtos .lista-de-produtos .lista-de-produtos_item .foto-do-produto {
-      position: relative; }
-      .produtos .lista-de-produtos .lista-de-produtos_item .foto-do-produto .cotacao-do-dia {
-        position: absolute;
-        top: 2%;
-        right: 0;
-        margin: 13px;
-        background-color: #29b716;
-        padding: 8px;
-        border-radius: 6px;
-        color: #fff;
-        font-size: 12px; }
-    .produtos .lista-de-produtos .lista-de-produtos_item .descricao-do-produto {
-      padding: 30px; }
-    .produtos .lista-de-produtos .lista-de-produtos_item h3 {
-      font-weight: bold;
-      font-size: 22px;
-      margin: 10px 0; }
-    .produtos .lista-de-produtos .lista-de-produtos_item button {
+  .produtos .card {
+    text-align: left; }
+    .produtos .card button {
+      display: block;
       border: 1px solid #00633f;
       padding: 6px 8px;
       border-radius: 3px;
       margin-top: 7px;
       color: #00633f;
       font-size: 14px;
-      font-weight: bold; }
-      .produtos .lista-de-produtos .lista-de-produtos_item button:hover {
+      font-weight: bold;
+      background: transparent; }
+      .produtos .card button:hover {
         background-color: #00633f;
         color: #fff; }
 
@@ -389,19 +377,11 @@ body {
   margin-bottom: 45px;
   background-attachment: fixed !important;
   background-position: center !important; }
-  .sobre-a-empresa .imagem-da-empresa {
-    width: 40%;
-    margin-right: 5%;
-    border-radius: 10px;
-    min-width: 293px; }
-  .sobre-a-empresa .informacoes-sobre-a-empresa {
-    width: 55%;
-    color: #fff; }
-
-.fotos-da-empresa .fotos-da-empresa_item {
-  margin: 20px; }
-  .fotos-da-empresa .fotos-da-empresa_item .imagem-da-empresa {
-    width: 100%; }
+  .sobre-a-empresa .conteudo {
+    text-align: center;
+    width: 50%; }
+    .sobre-a-empresa .conteudo h2, .sobre-a-empresa .conteudo p {
+      color: #fff !important; }
 
 @media screen and (max-width: 666px) {
   .sobre-a-empresa {
