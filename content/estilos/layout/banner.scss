@@ -49,13 +49,14 @@
 		    img{
 		    	margin: 0 auto;
     			display: block;
-    			height: 437px;
-    			width: 100%;
 		    }
 
 		}
 
 	}
+}
+figcaption{
+	display: none;
 }
 
 .ativo {
@@ -108,6 +109,8 @@
     top: 19px;
   }
 }
+
+
 .ligue-nos{
     background-color: #00623e;
 	color: #fff;
@@ -117,6 +120,7 @@
 		font-size: 23px;
 		margin-right: 10px;
 		height: 40px;
+		display: inline-block;
 	}
 
 	.texto{
@@ -133,4 +137,16 @@
 		align-items: center;
 	}
 
+}
+
+
+
+@media screen and (max-width: 666px){
+	.banner{
+		height: 152px;
+	}
+
+	.figcaption{
+		display: none;
+	}
 }

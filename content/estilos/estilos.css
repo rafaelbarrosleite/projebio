@@ -235,9 +235,10 @@ button {
       width: 100%; }
       .banner .banner_imagens .imagens img {
         margin: 0 auto;
-        display: block;
-        height: 437px;
-        width: 100%; }
+        display: block; }
+
+figcaption {
+  display: none; }
 
 .ativo {
   opacity: 1 !important;
@@ -284,7 +285,8 @@ button {
   .ligue-nos .icone {
     font-size: 23px;
     margin-right: 10px;
-    height: 40px; }
+    height: 40px;
+    display: inline-block; }
   .ligue-nos .texto {
     font-size: 16px; }
     .ligue-nos .texto .numero-do-telefone {
@@ -294,8 +296,15 @@ button {
   .ligue-nos .columns {
     align-items: center; }
 
+@media screen and (max-width: 666px) {
+  .banner {
+    height: 152px; }
+
+  .figcaption {
+    display: none; } }
 .cabecalho .contato-cabecalho {
-  text-align: right; }
+  text-align: right;
+  margin-top: 0; }
   .cabecalho .contato-cabecalho .icone {
     margin: 10px;
     height: 40px; }
@@ -311,29 +320,13 @@ button {
       display: block;
       font-weight: bold; }
 
-.menu {
-  text-align: center;
-  color: #424242;
-  font-size: 16px;
-  white-space: nowrap;
-  flex-grow: 0;
-  flex-shrink: 0; }
-  .menu .menu_link {
-    margin: 0 7px;
-    position: relative;
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: #000000; }
-  .menu .menu_link:hover:after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    display: block;
-    background: #bdbdbd;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #00623e; }
+.cotacao {
+  margin-top: 13px; }
+  .cotacao .cotacao_item {
+    margin-right: 8px; }
+    .cotacao .cotacao_item .valor {
+      color: #00623e;
+      font-weight: bold; }
 
 body {
   font-family: 'Roboto'; }
@@ -363,12 +356,6 @@ body {
         background-color: #00633f;
         color: #fff; }
 
-.cotacao .cotacao_item {
-  margin-right: 8px; }
-  .cotacao .cotacao_item .valor {
-    color: #00623e;
-    font-weight: bold; }
-
 .sobre-a-empresa {
   height: 357px;
   margin-top: 30px;
@@ -378,8 +365,8 @@ body {
   background-attachment: fixed !important;
   background-position: center !important; }
   .sobre-a-empresa .conteudo {
-    text-align: center;
-    width: 50%; }
+    text-align: justify;
+    width: 59%; }
     .sobre-a-empresa .conteudo h2, .sobre-a-empresa .conteudo p {
       color: #fff !important; }
 
@@ -387,6 +374,9 @@ body {
   .sobre-a-empresa {
     height: 470px;
     padding: 38px 0 0 0; }
+    .sobre-a-empresa .conteudo {
+      width: 90%;
+      margin: 16px; }
     .sobre-a-empresa .blocos {
       display: block !important; }
     .sobre-a-empresa .imagem-da-empresa {

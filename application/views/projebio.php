@@ -149,7 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		  <div class="hero-body">
 		    <div class="container columns">
 			  <section class="column">
-					<div class="columns">
+					<div class="columns is-mobile">
 						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone-branco.png">
 						<div class="texto column is-8"> 
 							Ligue agora
@@ -160,7 +160,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</section>
 				<section class="column">
-					<div class="columns">
+					<div class="columns is-mobile">
 						<img class="icone" src="<?php echo base_url();?>content/img/ic-email.png">
 						<div class="texto column is-8"> 
 							Atendimento por e-mail
@@ -173,7 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </div>
 		  </div>
 		</section>
-		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem-empresa.jpg");		>
+		<div id="quemSomos" class="sobre-a-empresa" style="background: url('<?php echo base_url();?>content/img/imagem-empresa.jpg") no-repeat;		>
 			<main class="conteudo">
 				<h2 class="title is-3">A PROJEBIO</h2>
 				<p class="subtitle is-6">

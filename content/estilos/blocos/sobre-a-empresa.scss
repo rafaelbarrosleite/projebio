@@ -8,9 +8,8 @@
     background-position: center !important;
 
     .conteudo{
-        text-align: center;
-        width: 50%;
-
+        text-align: justify;
+        width: 59%;
         h2,p{
             color: #fff !important;
 
@@ -19,13 +18,17 @@
     }
 }
 
-
 @media screen and (max-width: 666px){
 
     .sobre-a-empresa{
         height: 470px;
         padding: 38px 0 0 0;
         
+        .conteudo{
+            width: 90%;
+            margin: 16px;
+        }
+
         .blocos{
             display: block !important;
         }
