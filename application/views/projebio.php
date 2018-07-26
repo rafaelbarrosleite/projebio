@@ -76,7 +76,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<main id="produtos" class="conteudo">
 			<section class="produtos"> 
 				<h3 class="title is-3">Conheça nossos produtos</h3>
-				<p class="subtitle is-6">Trabalhamos com processamento da mamona onde são obtidos dois produtos: o <strong>Óleo de mamona</strong> e a<strong> Torta de mamona</strong>.</p>
 				<div class="columns">
 					<div class="card column">
 					  <div class="card-image">
@@ -93,8 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    </div>
 
 					    <div class="content">
-							A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
-					     
+							Óleo de algodão bruto é obtido através do processamento mecânico do caroço de algodão, sendo utilizado para: produção de Biodiesel, Pulverização Agrícola e Refino.
 					     <button type="button" id="abrir-modal">Ficha técnica</button>
 					    </div>
 					  </div>
@@ -177,11 +175,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<main class="conteudo">
 				<h2 class="title is-3">A PROJEBIO</h2>
 				<p class="subtitle is-6">
-					A PROJEBIO é uma empresa de processamento de mamona, que fornece para o mercado brasileiro óleo de mamona tipo 1 e adubos orgânicos à base de torta de mamona, que são excelentes fertilizantes pelo alto teor de nitrogênio.
+					A PROJEBIO é uma empresa de processamento de caroço de algodão, disponibilizando ao mercado local a TORTA DE ALGODÃO e ÓLEO DE ALGODÃO BRUTO. 
+					Produtos estes são ingredientes fundamentais para os ramos do agronegócio, biodiesel e industria alimentícia.
 					<br>	
-					A empresa investe, continuamente, em tecnologia e inovação e, possui um rigoroso controle de qualidade de seus produtos.
-					<br>
-					A nossa missão é a excelência em qualidade industrial e operacional, atrelada a sustentabilidade ambiental e compromisso social.
+A empresa investe, continuamente, em tecnologia e inovação, possuindo um rigoroso controle de qualidade de seus produtos, buscando é a excelência em qualidade industrial e operacional.
 					<br>
 					Nossas instalações estão localizadas em Jaraguari-MS a 45km da capital.
 				</p>
