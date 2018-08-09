@@ -93,14 +93,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					    <div class="content">
 							Óleo de algodão bruto é obtido através do processamento mecânico do caroço de algodão, sendo utilizado para: produção de Biodiesel, Pulverização Agrícola e Refino.
-					     <button type="button" id="abrir-modal">Ficha técnica</button>
+					     <button type="button" id="abrir-modal-oleo">Ficha técnica</button>
 					    </div>
 					  </div>
 					</div>
 					<div class="card column">
 					  <div class="card-image">
 					    <figure class="image is-4by3">
-					      <img src="<?php echo base_url();?>content/img/adubos-organico.jpg" alt="">
+					      <img src="<?php echo base_url();?>content/img/adubos-organico.jpg">
 					    </figure>
 					  </div>
 					  <div class="card-content">
@@ -114,31 +114,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    <div class="content">
 											A torta de algodão, é o subproduto da extração do óleo contido no grão do algodão e esmagado, sendo usada na forma obtida ou moída e peletizada para fins de nutrição animal.
 					     
-					     <button type="button" class="sem-preenchimento" id="abrir-modal">Ficha técnica</button>
+					     <button type="button" class="sem-preenchimento" id="abrir-modal-torta">Ficha técnica</button>
 					    </div>
 					  </div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<div class="modal" id="modal" role="dialog">
+		<div class="modal" id="modalOleo" role="dialog">
 		    <div class="modal-dialog">
 		    	<div class="modal-content">
 			        <div class="modal-header">
-						<div type="button" class="fechar-modal sem-preenchimento">&times;
+						<div type="button" class="fechar-modal fechar-modal-oleo sem-preenchimento">&times;
 						</div>
-						<h2>Óleo de algodão bruto</h2>
+						<h2 class="title is-4">Óleo de algodão bruto</h2>
 			        </div>
 			        <div class="modal-body">
-			        	<p>
-							O óleo e muito utilizado no setor de comestíveis, como óleo para saladas, como óleo de cozinha é usado em frituras, tanto em cozinhas comerciais como nas caseiras.
-						</p>
-						<p>
-							Para as indústrias de biodiesel, o óleo de algodão tem a vantagem de ser mais barato que o de soja. É por isso que esse óleo acabou conquistando espaço e se tornando uma das matérias-primas mais usadas para produção de biodiesel no Brasil.
-						</p>	
-						<p>
-							O óleo também vem sendo utilizado no combate às pragas das lavouras, principalmente nas plantações de coco. Por ser um produto natural, não agride o meio ambiente, não compromete a saúde do agricultor e é de fácil manuseio.
-						</p>	
+			      		 <img src="<?php echo base_url();?>content/img/especificacao-oleo.jpg">
+			        </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="modal" id="modalTorta" role="dialog">
+		    <div class="modal-dialog">
+		    	<div class="modal-content">
+			        <div class="modal-header">
+						<div type="button" class="fechar-modal fechar-modal-torta sem-preenchimento">&times;
+						</div>
+						<h2 class="title is-4">Torta de algodão</h2>
+			        </div>
+			        <div class="modal-body">
+			      		 <img src="<?php echo base_url();?>content/img/especificacao-torta.jpg">
 			        </div>
 		        </div>
 		    </div>
@@ -188,21 +194,21 @@ A empresa investe, continuamente, em tecnologia e inovação, possuindo um rigor
 			<div class="card column">
 			  <div class="card-image">
 			    <figure class="image is-4by3">
-			      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			      <img src="<?php echo base_url();?>content/img/miniatura1.jpg" alt="Placeholder image">
 			    </figure>
 			  </div>
 			</div>
 			<div class="card column">
 			  <div class="card-image">
 			    <figure class="image is-4by3">
-			      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			      <img src="<?php echo base_url();?>content/img/miniatura2.jpg" alt="Placeholder image">
 			    </figure>
 			  </div>
 			</div>
 			<div class="card column">
 			  <div class="card-image">
 			    <figure class="image is-4by3">
-			      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			      <img src="<?php echo base_url();?>content/img/miniatura3.jpg" alt="Placeholder image">
 			    </figure>
 			  </div>
 			</div>

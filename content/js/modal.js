@@ -1,9 +1,20 @@
 $(document).ready(function(){
-    $("#abrir-modal").click(function(){
-        $("#modal").toggle();
+    $("#abrir-modal-oleo").click(function(){
+        $("#modalOleo").toggle();
     });
 
-     $(".fechar-modal").click(function(){
-        $("#modal").toggle();
+     $(".fechar-modal-oleo").click(function(){
+        $("#modalOleo").toggle();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#abrir-modal-torta").click(function(){
+        $("#modalTorta").toggle();
+    });
+
+     $(".fechar-modal-torta").click(function(){
+        $("#modalTorta").toggle();
     });
 });
