@@ -35,21 +35,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			  	<section class="navbar-menu cotacao">
 					<div class="cotacao_item">
 						<span class="tipo">Óleo de algodão</span>
-						<div class="valor">R$ 3,595/KG</div>
-					</div>
+						<div class="valor"><?php echo "R$ ".$cotacaoOleo."/KG";?></div>
+					</div>	
 					<div class="cotacao_item">
 						<span class="tipo">Torta de algodão</span>
-						<div class="valor">R$ 3,59/Ton</div>
+						<div class="valor"><?php echo "R$ ".$cotacaoTorta."/Ton";?></div>
 					</div>
 				</section>
 				<section class="contato-cabecalho navbar-menu columns">
 					<div class="column is-2">
-						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone.png">
+						<img class="icone" src="<?php echo base_url();?>content/img/whatsicon.png">
 					</div>	
 					<div class="texto column is-8"> 
 						Entre em contato
 						<div class="numero-do-telefone">
-							(67) 9 9920-3974
+							(067) 9 9920-3974
 						</div>
 					</div>
 				</section>
@@ -154,11 +154,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    <div class="container columns">
 			  <section class="column">
 					<div class="columns is-mobile">
-						<img class="icone" src="<?php echo base_url();?>content/img/ic-phone-branco.png">
+						<img class="icone" src="<?php echo base_url();?>content/img/whatsicon.png">
 						<div class="texto column is-8"> 
 							Ligue agora
 							<div class="numero-do-telefone">
-								(67) 9 9920-3974
+								(067) 9 9920-3974
 							</div>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					A PROJEBIO é uma empresa de processamento de caroço de algodão, disponibilizando ao mercado local a TORTA DE ALGODÃO e ÓLEO DE ALGODÃO BRUTO. 
 					Produtos estes são ingredientes fundamentais para os ramos do agronegócio, biodiesel e industria alimentícia.
 					<br>	
-A empresa investe, continuamente, em tecnologia e inovação, possuindo um rigoroso controle de qualidade de seus produtos, buscando é a excelência em qualidade industrial e operacional.
+A empresa investe, continuamente, em tecnologia e inovação, possuindo um rigoroso controle de qualidade de seus produtos, buscando a excelência em qualidade industrial e operacional.
 					<br>
 					Nossas instalações estão localizadas em Jaraguari-MS a 45km da capital.
 				</p>

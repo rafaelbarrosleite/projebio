@@ -5,14 +5,29 @@ class Base extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-        $this->load->model('comentario_m');
+		$this->load->model('comentario_m');
+		$this->load->model('cotacao_m');
     }
 
 
 	public function index()
 	{
-		$data['validacao'] = "primeiroAcesso";  
+		$data['validacao'] = "primeiroAcesso";
+		
+		$cotacaoOleo = $this->cotacao_m->buscarUltimaCotacaoPorTipo('1');
+		foreach($cotacaoOleo->result() as $oleo){}
+		$data['cotacaoOleo'] = $this->formatarValor($oleo->valor, '3');
+		
+		$cotacaoTorta = $this->cotacao_m->buscarUltimaCotacaoPorTipo('2');
+		foreach($cotacaoTorta->result() as $torta){}
+		$data['cotacaoTorta'] = $this->formatarValor($torta->valor, '2');
+		
 		$this->load->view('projebio', $data);
+	}
+
+	private function formatarValor($valor, $numeroCadasDecimais){
+		$valorFormatado = number_format($valor, $numeroCadasDecimais, ',', '.');
+		return $valorFormatado;
 	}
 
 	public function salvarContato(){
