@@ -8,9 +8,50 @@
             </div>
             <div class="row">
                <div class="col-12 text-center">
-                  <h2 class="text-thin">Single view content</h2>
-                  <p>This project is an application skeleton. You can use it to quickly bootstrap your jQuery webapp projects and dev environment for these projects.
-                     <br>The seed app doesn't do much and has most of the feature removed so you can add theme as per your needs just following the demo app examples.</p>
+               <div class="card card-default">
+               <table class="table table-striped">
+                  <tbody>
+                     <?php foreach($mensagens as $mensagem){ ?>
+                        <tr>
+                        <td class="text-center">
+                           <a href="">
+                              <strong><?php echo $mensagem['nomeCliente'] ?></strong>
+                           </a>
+                        </td>
+                        <td class="text-right">em
+                           <em>
+                           <?php $dataMensagem = implode("/",array_reverse(explode("-",$mensagem['dataComentario'])));
+                                               echo $dataMensagem ?>
+                          </em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="text-center">
+                           <div class="mt-2">
+                              <a href="#">
+                                 <img class="rounded-circle thumb64" src="<?php echo base_url();?>content/templateAngle/img/user/avatar.png" alt="avatar">
+                              </a>
+                           </div>
+                           <small><?php echo $mensagem['telefoneCliente'] ?></small>
+                           <br>
+                           <small><?php echo $mensagem['emailCliente'] ?></small>
+                        </td>
+                        <td>
+                           <p><?php echo $mensagem['textoComentario'] ?></p>
+                           <div class="text-right">
+                           <a href="<?php echo base_url()?>areaRestrita/Mensagem/excluirMensagem/<?php echo $mensagem['idComentario'] ?>" class="btn btn-sm btn-secondary" >
+                           <em class="fa fa-trash"></em>
+                        </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <?php } ?>
+                     
+
+
+                  </tbody>
+               </table>
+            </div>
                </div>
             </div>
          </div>

@@ -23,7 +23,10 @@ class Cotacao extends CI_Controller {
 		$data['cotacaoTorta'] = $this->formatarValor($torta->valor, '2');
 
         $data['cotacoesOleo'] = $this->cotacao_m->buscarTodasCotacaoPorTipo('1')->result_array();
+       // $data['cotacoesOleoAsc'] = $this->cotacao_m->buscarTodasCotacaoPorTipoCrescente('1')->result_array();
+
         $data['cotacoesTorta'] = $this->cotacao_m->buscarTodasCotacaoPorTipo('2')->result_array();
+     //   $data['cotacoesTortaAsc'] = $this->cotacao_m->buscarTodasCotacaoPorTipoCrescente('2')->result_array();
 
         $data_hoje_sql =date("Y-m-d");
         $data['dataAtual'] = $data_hoje_sql;

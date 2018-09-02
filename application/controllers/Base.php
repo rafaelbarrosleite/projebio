@@ -57,9 +57,25 @@ class Base extends CI_Controller {
 
 			if ($idComentario > 0) {
 				$data['validacao'] = "comentarioEnviado";  
+				$cotacaoOleo = $this->cotacao_m->buscarUltimaCotacaoPorTipo('1');
+				foreach($cotacaoOleo->result() as $oleo){}
+				$data['cotacaoOleo'] = $this->formatarValor($oleo->valor, '3');
+				
+				$cotacaoTorta = $this->cotacao_m->buscarUltimaCotacaoPorTipo('2');
+				foreach($cotacaoTorta->result() as $torta){}
+				$data['cotacaoTorta'] = $this->formatarValor($torta->valor, '2');
+				
 				$this->load->view('projebio', $data);
 			} else {
 				$data['validacao'] = "erroEnviarComentario";
+				$cotacaoOleo = $this->cotacao_m->buscarUltimaCotacaoPorTipo('1');
+				foreach($cotacaoOleo->result() as $oleo){}
+				$data['cotacaoOleo'] = $this->formatarValor($oleo->valor, '3');
+				
+				$cotacaoTorta = $this->cotacao_m->buscarUltimaCotacaoPorTipo('2');
+				foreach($cotacaoTorta->result() as $torta){}
+				$data['cotacaoTorta'] = $this->formatarValor($torta->valor, '2');
+				
 				$this->load->view('projebio', $data);
 			}
 		}   
