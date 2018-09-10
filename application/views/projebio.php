@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    <div class="media">
 					      <div class="media-content">
 					        <p class="title is-4">Óleo de algodão bruto</p>
-					        <span class="tag is-info">R$ 3,595/KG</span>
+					        <span class="tag is-info"><?php echo "R$ ".$cotacaoOleo."/KG";?></span>
 					      </div>
 					    </div>
 
@@ -107,7 +107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    <div class="media">
 					      <div class="media-content">
 					        <p class="title is-4">Torta de algodão</p>
-					        <span class="tag is-info">R$ 3,59/Ton</span>
+					        <span class="tag is-info"><?php echo "R$ ".$cotacaoTorta."/Ton";?></span>
 					      </div>
 					    </div>
 
